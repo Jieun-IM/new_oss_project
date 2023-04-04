@@ -24,7 +24,7 @@ runs:         #실행
     - name: Pass Inputs to Shell
       run: |
         echo "INPUT_NUM=${{ inputs.num }}" >> $GITHUB_ENV
-        shell: bash
+      shell: bash
     - name: Fetch the number's square
       id: get-square
       run: python src/get_num_square.py
